@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Registrarse</title>
-  <script defer src="index.js"></script>
+  <style>
+    .content{
+      text-align: center;
+    }
+  </style>
+  <script defer src="/index.js"></script>
 </head>
 <body>
-  <h1>Formulario de registro</h1>
+  <div class="content">
+    <h1>Formulario de registro</h1>
   <form id="signupForm">
     <label>Nombre: <input type="text" name="nombre" required></label><br>
     <label>Email: <input type="email" name="email" required></label><br>
     <label>Contraseña: <input type="password" name="password" required></label><br>
+
     <button type="submit">Registrarse</button>
   </form>
 
   <p id="mensaje"></p>
+  </div>
 </body>
 </html>

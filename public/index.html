@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Página de inicio</title>
+  <style>
+    .content{
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido</h1>
+  <div class="content"><h1>Bienvenido</h1>
 
   <img src="imagen1.jpg" width="200">
   <img src="imagen2.jpg" width="200">
   <img src="imagen3.jpg" width="200">
   
   <h1>Iniciar sesión</h1>
-<form id="loginForm">
+<form action="/login" method="POST">
   <label>Email: <input type="email" name="email" required></label><br>
   <label>Contraseña: <input type="password" name="password" required></label><br>
   <button type="submit">Entrar</button>
+  
 </form>
 <p id="mensaje"></p>
 
   <p><a href="/signup">Crear cuenta</a></p>
+</div>
+
 </body>
 </html>
